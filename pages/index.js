@@ -33,6 +33,15 @@ export default function Home() {
           </p>
         </a>
       </Link>
+      <Link href={`/orange/https%3A%2F%2Fgoogle.com`}>
+        <a className={styles.card}>
+          <div className={`${styles.id} ${styles.url}`}>
+            URL as dynamic parameter
+          </div>
+          <h2>URL as id</h2>
+          <p>URL Encoded dynamic parameter</p>
+        </a>
+      </Link>
     </Layout>
   );
 }

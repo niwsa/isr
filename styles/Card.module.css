@@ -43,3 +43,9 @@
   font-weight: bold;
   font-size: 32px;
 }
+
+.url {
+  width: auto;
+  border-radius: 10px;
+  font-size: 1rem;
+}
