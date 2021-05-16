@@ -7,7 +7,7 @@ export default function Home() {
   const [id, setId] = useState(1);
 
   useEffect(() => {
-    setId(Math.round(10 * Math.random()));
+    setId(Math.floor(Math.random() * 5) + 1);
   }, []);
 
   return (
