@@ -21,7 +21,7 @@ export async function getStaticProps({ params }) {
   return {
     props: {
       ts,
-      id: `${id} 🐶🦁🐱`,
+      id: `${id} `,
     },
     revalidate: 1,
   };

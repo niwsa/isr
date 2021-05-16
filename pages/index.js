@@ -14,6 +14,7 @@ export default function Home() {
     <Layout>
       <Link href={`/avacado/${id}`}>
         <a className={styles.card}>
+          <div className={styles.id}>{id}</div>
           <h2>Avacado</h2>
           <p>
             The avocado, a tree likely originating from south-central Mexico, is
@@ -23,6 +24,7 @@ export default function Home() {
       </Link>
       <Link href={`/orange/${id}`}>
         <a className={styles.card}>
+          <div className={styles.id}>{id}</div>
           <h2>Orange</h2>
           <p>
             The orange is the fruit of various citrus species in the family

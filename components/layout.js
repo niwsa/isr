@@ -14,15 +14,15 @@ export default function Layout({ children, ts = "", id = "", isFallback }) {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to{" "}
+          {id && ts ? "Back" : "Welcome"} to{" "}
           <Link href="/">
-            <a>ISR Testing!</a>
+            <a>{id && ts ? "root page" : "ISR Testing!"}</a>
           </Link>
         </h1>
 
         <p className={styles.description}>
-          ID ➡ {isFallback ? "Generating id..." : id}
-          <code className={styles.code}>{ts}</code>
+          {isFallback ? "Generating id..." : id ? `ID : ${id}` : null}
+          <code className={styles.code}>{ts ? ts : "Click on a card"}</code>
         </p>
 
         <div className={styles.grid}>{children}</div>
